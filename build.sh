@@ -48,6 +48,6 @@ docker buildx build \
   --build-arg VERSION_SHORT=$VERSION_SHORT \
   --build-arg VERSION_GIT_HASH=$VERSION_GIT_HASH \
   --platform $PLATFORM \
-  --load -t ghcr.io/fluent-networks/tailscale-mikrotik:$VERSION .
+  --load -t ghcr.io/signingup/tailscale-mikrotik:$VERSION .
 
-docker save -o tailscale.tar ghcr.io/fluent-networks/tailscale-mikrotik:$VERSION
+docker save -o tailscale.tar ghcr.io/signingup/tailscale-mikrotik:$VERSION
